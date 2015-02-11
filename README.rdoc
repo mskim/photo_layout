@@ -1,0 +1,25 @@
+# Photo Layout
+
+Rails app for Photo Layout service
+
+## Table
+
+### User
+	- name
+	- agent_id
+	- device ithems
+
+	belongs_to  :agent
+
+### Job
+	- title
+	- pages:integer
+	- user_id
+
+### Agent
+	- name
+	- email
+	- cell
+	- bank_info
+	
+	has_many  :users
